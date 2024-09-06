@@ -1,0 +1,21 @@
+{
+    "name": "persona-frontend",
+    "version": "1.0.0",
+    "dependencies": {
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2",
+      "react-scripts": "^5.0.1",
+      "axios": "^0.21.1"
+    },
+    "devDependencies": {
+      "@babel/plugin-proposal-private-property-in-object": "^7.16.7"
+    },
+    "scripts": {
+      "start": "react-scripts start",
+      "build": "react-scripts build"
+    },
+    "browserslist": {
+      "production": [">0.2%", "not dead", "not op_mini all"],
+      "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+    }
+  }
