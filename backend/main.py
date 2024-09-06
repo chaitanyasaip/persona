@@ -38,6 +38,10 @@ embedding_model = SentenceTransformer(settings.embedding_model)
 # Initialize models
 tokenizer, model, embedding_model = init_models(settings)
 
+@app.get("/test")
+async def test_route():
+    return {"message": "Backend is working!"}
+
 @app.post("/upload")
 async def upload_file(file: UploadFile = File(...)):
     try:

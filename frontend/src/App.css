@@ -12,7 +12,7 @@ body, html {
 }
 
 .sidebar {
-  width: 200px;
+  width: 250px;
   background-color: #111111;
   padding: 20px;
   display: flex;
@@ -26,7 +26,7 @@ body, html {
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 28px;
   margin-bottom: 40px;
 }
 
@@ -36,12 +36,13 @@ body, html {
 }
 
 .nav-links li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .nav-links a {
   color: #FFFFFF;
   text-decoration: none;
+  font-size: 18px;
 }
 
 .user-profile {
@@ -51,38 +52,92 @@ body, html {
 }
 
 .user-profile img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   margin-right: 10px;
 }
 
-.content-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
+.user-profile span {
+  font-size: 16px;
 }
 
-.content-card {
-  background-color: #111111;
-  padding: 20px;
-  border-radius: 8px;
+h1 {
+  font-size: 48px;
+  margin-bottom: 30px;
 }
 
-.search-bar {
-  position: fixed;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
-  max-width: 600px;
-}
-
-.search-bar input {
-  width: 100%;
-  padding: 10px;
-  border-radius: 20px;
-  border: none;
+.chat-interface {
   background-color: #222222;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.chat-history {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.message {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.message.user {
+  background-color: #333333;
+}
+
+.message.assistant {
+  background-color: #444444;
+}
+
+.chat-input {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #333333;
   color: #FFFFFF;
+  font-size: 16px;
+}
+
+.chat-input button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.chat-input button:disabled {
+  background-color: #555555;
+  cursor: not-allowed;
+}
+
+.file-upload {
+  margin-bottom: 20px;
+}
+
+.file-upload input[type="file"] {
+  margin-right: 10px;
+}
+
+.file-upload button {
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }

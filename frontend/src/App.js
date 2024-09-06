@@ -22,14 +22,8 @@ function App() {
       </aside>
       <main className="main-content">
         <h1>find and<br />be found.</h1>
-        <div className="content-grid">
-          {/* Add content cards here */}
-        </div>
         <ChatInterface />
       </main>
-      <div className="search-bar">
-        <input type="text" placeholder="find sai..." />
-      </div>
     </div>
   );
 }
