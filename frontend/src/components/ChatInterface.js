@@ -5,9 +5,11 @@ import FileUpload from './FileUpload';
 
 function ChatInterface() {
   const [query, setQuery] = useState('');
-  const [response, setResponse] = useState('');
+  //const [response, setResponse] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [chatHistory, setChatHistory] = useState([]);
+
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
